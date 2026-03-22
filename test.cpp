@@ -105,7 +105,6 @@ int main() {
 
     IsoResult res = apply_vftwo_subgraph_isomorphism(G, H);
 
-    // Deduplicate: rotations/reflections of the same cycle share the same node set
     std::set<std::set<int> > unique_cycles;
     for (size_t i = 0; i < res.mappings.size(); ++i) {
         std::set<int> nodes;
